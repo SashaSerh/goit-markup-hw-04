@@ -37,7 +37,7 @@ box-sizing: inherit;
 /* ----------селектор * для встановлення на всі єлеемнти */
 
 .hero{
-    width: 1600px;
+   max-width: 1600px;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
