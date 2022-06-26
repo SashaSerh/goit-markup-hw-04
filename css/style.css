@@ -38,6 +38,7 @@ box-sizing: inherit;
 
 .hero{
    max-width: 1600px;
+   margin: 0 auto;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -51,7 +52,6 @@ body {
     margin: 0;
     font-family: var(--main-font), sans-serif;
     background-color: var(--backgraund-color-body);
-    width: 1600px;
     
 }
     /* для центрування і обмеження контенту по ширині. */
@@ -540,7 +540,8 @@ margin-left: auto;
     margin-bottom: 30px;
     width: 270px;
     height: 120px;
-    background-color: #F5F4FA;;
+    background-color: #F5F4FA;
+    border-radius: 4px;
 }
 /* ===========================/section2================ */
 
