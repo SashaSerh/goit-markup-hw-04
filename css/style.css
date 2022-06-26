@@ -63,7 +63,8 @@ body {
     h6,
     p,
     ul{
-margin: 0%
+
+margin: 0;
 
     }
     .card-border {
@@ -326,37 +327,45 @@ color: var(--accent-color);
 }
 
 .contact-icon {
-    /* width: 16px; */
-    height: 16px;
+   display: inline-block;
+   vertical-align: middle;
     fill: #757575;
-    margin-right: 10px;
+    margin-right: 7px;
 }
-.contact-icon:hover,
-.contact-icon:focus{
-    fill: var(--accent-color);
-    cursor: pointer;
-}
- .contact:hover .contact-icon,
- .contact:focus .contact-icon {
+
+ .contact-number-header:hover .contact-icon,
+ .contact-number-header:focus .contact-icon {
     fill: var(--accent-color);
  }
 
- .contact:hover .contact-number-header,
- .contact:focus .contact-number-header{
-     color: var(--accent-color);
+ .mail-link-header:hover .contact-icon,
+ .mail-link-header:focus .contact-icon {
+     fill: var(--accent-color);
  }
-.contact:hover .mail-link-header,
-.contact:focus .mail-link-header {
+
+ .contact-number-header:hover,
+ .contact-number-header:focus{
+     color: var(--accent-color);
+
+ }
+ .mail-link-header:hover,
+ .mail-link-header:focus {
     color: var(--accent-color);
+}
+
+
+.mail-link-header:focus .contact-icon{
+    fill: var(--accent-color);
+}
+
+.contact-number-header:focus .contact-icon {
+    fill: var(--accent-color);
 }
 
 .current{
     color: var(--hover-btn-color);
 }
-/* .mail-link-header:hover,
-.mail-link-header:focus {
-    color: var(--accent-color);
-} */
+
 .contact{
     display: flex;
     justify-content: center;
@@ -422,24 +431,17 @@ color: var(--main-text-color-w);
      padding-right: 24px;
      padding-bottom: 4px;
      padding-left: 24px;
-    background: var(--section-bg);
 
+    background: var(--section-bg);
     border-radius: 4px;
     cursor: pointer;
+    border: 0;
+
     font-family: var(--main-font) sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.87;
-    border: 0;
-
-    
-    
-    /* color: var(--main-text-color-w); */
-    /* ------- сделать кнопку прозрачной--------------- */
-    /* background-color: transparent; */
-    /* ------- сделать кнопку прозрачной--------------- */
-    /* /---------- ще е властивість для прозорості OPACITY---------/ */
 
 }
 
@@ -575,27 +577,33 @@ margin-left: auto;
     padding-bottom: 30px;
     padding-right: 10px;
     padding-left: 10px;
-    /* border-right: 1px solid #ECECEC;
-    border-bottom: 1px solid #ECECEC;
-    border-left: 1px solid #ECECEC; */
-
+  
 }
 
 .paragraph-s4{
-    margin-bottom: 18px;
-
-
+    margin-bottom: 16px;
     text-align: center;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
 
 }
+.paragfaph-card-portfolio{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+
+    letter-spacing: 0.03em;
+
+    color: #757575;
+
+}
 
 .paragraph-colors{
     color: var(--main-text-color);
 }
-.table-h3{
+.table-h3-portfolio{
 
  margin-bottom: 4px;
     text-align: center;
@@ -605,6 +613,20 @@ margin-left: auto;
     font-size: 18px;
     line-height: 2;
     color: var(--main-text-color-b);
+}
+.table-h3{
+    margin-bottom: 10px;
+    font-family: var(--main-font);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 0.84;
+    
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+        color: var(--main-text-color-b);
+
 }
 
  .img-s4:last-child {
@@ -660,7 +682,6 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     width: 44px;
     height: 44px;
 
-    /* background: rgba(255, 255, 255, 0.1); */
     border-radius: 50%;
 }
 .socials-icon {
@@ -691,23 +712,27 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         list-style: none;
      
     }
-    .clients:hover .clients-logo,
-    .clients:focus .clients-logo{
-        fill: #2196F3;
-        
+    .clients-link:hover .clients-logo,
+    .clients-link:focus .clients-logo{
+        fill: var(--accent-color);
     }
-    .clients:hover .clients-svg,
-    .clients:focus .clients-svg{
-        border-color:  #2196F3;
+   
+
+    .clients-link:hover,
+    .clients-link:focus{
+        border-color: var(--accent-color);
     }
+
     .clients:last-child{
         margin-right: 0;
     }
+
     .clients-item{
         display: flex;
         padding: 0;
     }
-    .clients-svg{
+
+    .clients-link{
 
         align-items: center;
             display: flex;
@@ -718,6 +743,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
             border-radius: 4px;
         
     }
+
 .clients-logo{
     fill: #AFB1B8;
 }
